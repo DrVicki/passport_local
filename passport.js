@@ -9,7 +9,7 @@ const customFields = {
     passwordField: 'password',
 }
 
-const verifyCallback = async (email, password, done) => {
+const verifyCallback = (email, password, done) => {
 
     User.findOne({ email })
     .then (user => {

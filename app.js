@@ -14,6 +14,7 @@ import db from './db.js'
 
 const app = express()
 
+// use environment variables locally.
 if(process.env.NODE_ENV !== 'production') dotenv.config()
 
 db()
